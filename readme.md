@@ -35,6 +35,8 @@
    - create api call the json data and connec the code with JSON server
    - start Jsonserver:-  using npm run db
    - test the api in postmen.
+   - install cors for connectivity 
+   - add const cors = require('cors');, app.use(cors()); in app.js
 # UI
   - create components :- Login and Todo components
   - install react-router-dom
@@ -99,7 +101,12 @@ function App() {
 }
 
 export default App
+
  - install Material UI :- 
      - npm install @mui/material @emotion/react @emotion/styled
      - npm install @mui/icons-material
  - Add Header component in the application
+ - create Login component
+ - create login service 
+ - in login service use fetch api to call the backend API
+

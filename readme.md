@@ -110,3 +110,8 @@ export default App
  - create login service 
  - in login service use fetch api to call the backend API
 
+ # Add todo
+
+  - create a enter todo on Todos.tsx
+  - create a Todo object and post it to the backend
+  - backend will send the data to json server

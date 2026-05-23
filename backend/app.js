@@ -7,7 +7,7 @@ const todoRouter = require('./routers/todoRouter');
 const cors = require('cors');
 app.use(cors());
 
-// app.use(express.json());
+app.use(express.json());
 
 app.use('/api/todos', todoRouter);
 

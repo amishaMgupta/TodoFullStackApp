@@ -1,16 +1,16 @@
 # full stack Todo Application
 1. create a folder with name todofullstack
 2. inside this folder create :-
-   - a. backend forlder
-   - b todoui (React typescript application)
+   - backend forlder
+   - todoui (React typescript application)
 ## backend:-
-  a. create package.json with npm init --y
-  b. install nodemon,express
-  c. create scripts
-     "start": "nodemon app.js",
-    "db": "json-server --watch ./db/db.json --port 3001"
-  d. create db.json inside db folder. 
-  e. create Todo Router code  :- 
+  - create package.json with npm init --y
+  - install nodemon,express
+  - create scripts
+    - "start": "nodemon app.js",
+    - "db": "json-server --watch ./db/db.json --port 3001"
+  - create db.json inside db folder. 
+  - create Todo Router code  :- 
         const express = require('express');
         const router = express.Router();
 
@@ -19,7 +19,7 @@
         });
 
         module.exports = router;
-  f. use this router in app.js
+  - use this router in app.js
         const express = require('express');
         const app = express();
         const PORT = 3000;
@@ -31,24 +31,25 @@
         app.listen(PORT, () => {
             console.log(`Server is running on port ${PORT}`);
         }) 
-   g. test your api in postmen.
-   h. create api call the json data and connec the code with JSON server
-   i. start Jsonserver:-  using npm run db
-   i. test the api in postmen.
+   - test your api in postmen.
+   - create api call the json data and connec the code with JSON server
+   - start Jsonserver:-  using npm run db
+   - test the api in postmen.
 # UI
-  a. create components :- Login and Todo components
-  b. install react-router-dom
-  c. edit Main.tsx code :- import {BrowserRouter } from 'react-router-dom'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.tsx'
+  - create components :- Login and Todo components
+  - install react-router-dom
+  - edit Main.tsx code :- 
+    import {BrowserRouter } from 'react-router-dom'
+    import { createRoot } from 'react-dom/client'
+    import './index.css'
+    import App from './App.tsx'
 
-createRoot(document.getElementById('root')!).render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>,
-)
- d. todo:- 
+    createRoot(document.getElementById('root')!).render(
+        <BrowserRouter>
+            <App />
+        </BrowserRouter>,
+    )
+ - todo:- 
  function Todo() {
   return (
     <div className="todo">
@@ -59,7 +60,8 @@ createRoot(document.getElementById('root')!).render(
 }
 
 export default Todo;
-    e. function Login() {
+- Login:- 
+ function Login() {
   return (
     <div className="login-container">
       <h2>Login</h2>
@@ -73,7 +75,7 @@ export default Todo;
 }
 
 export default Login;
-f. app.tsx
+- app.tsx
 
 import { Route,Routes } from 'react-router-dom'
 import './App.css'

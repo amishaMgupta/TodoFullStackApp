@@ -99,4 +99,7 @@ function App() {
 }
 
 export default App
-
+ - install Material UI :- 
+     - npm install @mui/material @emotion/react @emotion/styled
+     - npm install @mui/icons-material
+ - Add Header component in the application

@@ -3,6 +3,7 @@ const router = express.Router();
 
 router.get('/', async(req, res) => {
     const todoList = []
+    // getting the data from JSON Server
     await fetch('http://localhost:3001/todos')
         .then(response => response.json())
         .then(data => {

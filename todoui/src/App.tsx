@@ -2,7 +2,7 @@
 import { Route,Routes } from 'react-router-dom'
 import './App.css'
 import Header from './components/Header'
-import Todos from './components/Todo'
+import Todos from './components/Todos'
 import Login from './components/Login'
 
 function App() {
